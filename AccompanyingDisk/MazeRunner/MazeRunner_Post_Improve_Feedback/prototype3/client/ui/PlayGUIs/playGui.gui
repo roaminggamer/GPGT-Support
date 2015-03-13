@@ -1,0 +1,271 @@
+//--- OBJECT WRITE BEGIN ---
+new GameTSCtrl(PlayGui) {
+   Profile = "GuiContentProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 8";
+   Visible = "1";
+   applyFilterToChildren = "1";
+   cameraZRot = "0";
+   forceFOV = "0";
+      taskMgr = "2282";
+      noCursor = "1";
+      helpTag = "0";
+
+   new GuiCrossHairHud() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "368 268";
+      Extent = "64 64";
+      MinExtent = "8 8";
+      Visible = "1";
+      bitmap = "~/client/ui/PlayGUIs/HOWCrossHair";
+      wrap = "0";
+      damageFillColor = "0 1 0 1";
+      damageFrameColor = "1 0.6 0 1";
+      damageRect = "50 4";
+      damageOffset = "0 10";
+         helpTag = "0";
+   };
+   new GuiControl(CoinCounter) {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "left";
+      VertSizing = "bottom";
+      position = "540 10";
+      Extent = "126 55";
+      MinExtent = "8 2";
+      Visible = "1";
+         digitBitmap3 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic3";
+         digitBitmap0 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic0";
+         numDigits = "4";
+         digitBitmap7 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic7";
+         currentCount = "0000";
+         digitBitmap4 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic4";
+         digitBitmap1 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic1";
+         digitTileName = "cDigit";
+         digitBitmap8 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic8";
+         digitBitmap5 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic5";
+         digitBitmap2 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic2";
+         digitPath = "./yellowDigits/comic";
+         digitBitmap9 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic9";
+         digitBitmap6 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic6";
+
+      new GuiBitmapCtrl(cDigit0) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "80 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "~/client/ui/PlayGUIs/yellowDigits/comic0";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(cDigit1) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "55 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "~/client/ui/PlayGUIs/yellowDigits/comic0";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(cDigit2) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "30 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "~/client/ui/PlayGUIs/yellowDigits/comic0";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(cDigit3) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "5 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "~/client/ui/PlayGUIs/yellowDigits/comic0";
+         wrap = "0";
+      };
+   };
+   new GuiControl(ScoreCounter) {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "center";
+      VertSizing = "bottom";
+      position = "340 10";
+      Extent = "160 55";
+      MinExtent = "8 2";
+      Visible = "1";
+         digitBitmap3 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic3";
+         digitBitmap0 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic0";
+         numDigits = "5";
+         digitBitmap7 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic7";
+         currentCount = "0000";
+         digitBitmap4 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic4";
+         digitBitmap1 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic1";
+         digitTileName = "sDigit";
+         digitBitmap8 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic8";
+         digitBitmap5 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic5";
+         digitBitmap2 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic2";
+         digitPath = "./yellowDigits/comic";
+         digitBitmap9 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic9";
+         digitBitmap6 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic6";
+
+      new GuiBitmapCtrl(sDigit0) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "105 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "~/client/ui/PlayGUIs/yellowDigits/comic0";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(sDigit1) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "80 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "~/client/ui/PlayGUIs/yellowDigits/comic0";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(sDigit2) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "55 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "~/client/ui/PlayGUIs/yellowDigits/comic0";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(sDigit3) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "30 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "~/client/ui/PlayGUIs/yellowDigits/comic0";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(sDigit4) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "5 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "~/client/ui/PlayGUIs/yellowDigits/comic0";
+         wrap = "0";
+      };
+   };
+   new GuiControl(LivesCounter) {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "10 10";
+      Extent = "78 52";
+      MinExtent = "8 2";
+      Visible = "1";
+         digitBitmap3 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic3";
+         digitBitmap0 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic0";
+         numDigits = "2";
+         digitBitmap7 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic7";
+         currentCount = "0";
+         digitBitmap4 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic4";
+         digitBitmap1 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic1";
+         digitTileName = "lDigit";
+         digitBitmap8 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic8";
+         digitBitmap5 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic5";
+         digitBitmap2 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic2";
+         digitPath = "./yellowDigits/comic";
+         digitBitmap9 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic9";
+         digitBitmap6 = "starter.fps/client/ui/PlayGUIs/yellowDigits/comic6";
+
+      new GuiBitmapCtrl(lDigit0) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "34 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "~/client/ui/PlayGUIs/yellowDigits/comic0";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(lDigit1) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "4 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "~/client/ui/PlayGUIs/yellowDigits/comic0";
+         wrap = "0";
+      };
+   };
+   new GuiBitmapCtrl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "80 30";
+      Extent = "30 30";
+      MinExtent = "8 2";
+      Visible = "1";
+      bitmap = "~/client/ui/PlayGUIs/xicon";
+      wrap = "0";
+   };
+   new GuiBitmapCtrl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "left";
+      VertSizing = "bottom";
+      position = "655 30";
+      Extent = "30 30";
+      MinExtent = "8 2";
+      Visible = "1";
+      bitmap = "~/client/ui/PlayGUIs/xicon";
+      wrap = "0";
+   };
+   new GuiBitmapCtrl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "left";
+      VertSizing = "bottom";
+      position = "695 30";
+      Extent = "50 50";
+      MinExtent = "8 2";
+      Visible = "1";
+      bitmap = "~/client/ui/PlayGUIs/coinsicon";
+      wrap = "0";
+   };
+   new GuiBitmapCtrl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "115 30";
+      Extent = "50 50";
+      MinExtent = "8 2";
+      Visible = "1";
+      bitmap = "~/client/ui/PlayGUIs/livesicon";
+      wrap = "0";
+   };
+};
+//--- OBJECT WRITE END ---

@@ -1,0 +1,23 @@
+<TorsionProject>
+<Name>GPGT Lesson Kit</Name>
+<WorkingDir/>
+<EntryScript>main.cs</EntryScript>
+<DebugHook>dbgSetParameters( #port#, "#password#", true );</DebugHook>
+<Mods/>
+<ScannerExts>cs; gui</ScannerExts>
+<Configs>
+<Config>
+<Name>TGE 1.52 (release)</Name>
+<Executable>gpgt.exe</Executable>
+<Arguments/>
+<HasExports>true</HasExports>
+<Precompile>true</Precompile>
+<InjectDebugger>true</InjectDebugger>
+<UseSetModPaths>false</UseSetModPaths>
+</Config>
+</Configs>
+<SearchURL/>
+<SearchProduct>TGE</SearchProduct>
+<SearchVersion>HEAD</SearchVersion>
+<ExecModifiedScripts>true</ExecModifiedScripts>
+</TorsionProject>

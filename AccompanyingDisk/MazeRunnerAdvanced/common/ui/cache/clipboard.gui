@@ -1,0 +1,14 @@
+new SimSet(guiClipboard) {
+
+   new GuiTextCtrl() {
+      Profile = "GuiTextProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "62 62";
+      Extent = "164 29";
+      MinExtent = "8 2";
+      Visible = "1";
+      text = "in this version of the game.";
+      maxLength = "255";
+   };
+};

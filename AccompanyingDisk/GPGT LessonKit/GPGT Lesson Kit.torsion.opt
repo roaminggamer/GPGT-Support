@@ -1,0 +1,51 @@
+<TorsionProjectOptions>
+<Address>127.0.0.1</Address>
+<Password>password</Password>
+<Port>6060</Port>
+<LastConfig>TGE 1.52 (release)</LastConfig>
+<Breakpoints/>
+<Bookmarks/>
+<OpenFiles>
+<File ScrollX="0" ScrollY="94">gpgt\client\interfaces\SampleScriptConsole\SampleScriptConsole.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts00.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts01.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts02.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts03.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts04.cs</File>
+<File ScrollX="0" ScrollY="22">gpgt\SampleScripts\ts05.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts06.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts07.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts08.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts09.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts10.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts11.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts12.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts13.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts14.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts15.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts16.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts17.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts18.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts19.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts20.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts21.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts22.cs</File>
+<File ScrollX="0" ScrollY="1">gpgt\SampleScripts\ts23.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts24.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts25.cs</File>
+<File ScrollX="0" ScrollY="1">gpgt\SampleScripts\ts26.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts27.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts28.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts29.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts30.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts31.cs</File>
+<File ScrollX="0" ScrollY="0" Active="true">gpgt\SampleScripts\ts32.cs</File>
+<File ScrollX="0" ScrollY="4">gpgt\SampleScripts\ts33.cs</File>
+<File ScrollX="0" ScrollY="3">gpgt\SampleScripts\ts34.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts35.cs</File>
+<File ScrollX="0" ScrollY="19">gpgt\SampleScripts\ts36.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts37.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts38.cs</File>
+<File ScrollX="0" ScrollY="0">gpgt\SampleScripts\ts39.cs</File>
+</OpenFiles>
+</TorsionProjectOptions>

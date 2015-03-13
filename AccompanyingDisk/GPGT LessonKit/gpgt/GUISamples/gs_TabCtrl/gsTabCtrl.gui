@@ -1,0 +1,159 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(gsTabCtrl) {
+   Profile = "gsDefaultProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 8";
+   Visible = "1";
+      Parent = "GUISamplerInterface";
+
+   new GuiChunkedBitmapCtrl() {
+      Profile = "gsDefaultProfile";
+      HorizSizing = "width";
+      VertSizing = "height";
+      position = "0 0";
+      Extent = "800 600";
+      MinExtent = "8 2";
+      Visible = "1";
+      bitmap = "~/client/sharedAssets/Background1.png";
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         Profile = "gpgtButtonProfile1";
+         HorizSizing = "relative";
+         VertSizing = "relative";
+         position = "125 525";
+         Extent = "75 75";
+         MinExtent = "8 2";
+         Visible = "1";
+         Command = "Canvas.setContent(Canvas.getContent().Parent);";
+         Accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+
+      new GuiControl() {
+         Profile = "guiSamplerBackFill";
+         horizSizing = "center";
+         vertSizing = "relative";
+         position = "100 60";
+         extent = "600 30";
+         MinExtent = "8 2";
+         Visible = "1";
+                     
+         new GuiTextCtrl() {
+            profile = "GuiMediumTextProfile";
+            horizSizing = "right";
+            vertSizing = "top";
+            position = "20 2";
+            extent = "580 26";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Sample Directory: gpgt/GUISamples/gs_TabCtrl";
+         };
+      };
+
+      new GuiControl() {
+         Profile = "gsDefaultProfile";
+         HorizSizing = "relative";
+         VertSizing = "relative";
+         position = "100 100";
+         Extent = "600 400";
+         MinExtent = "8 2";
+         Visible = "1";
+         
+         new GuiTabBookCtrl(tabbook) {
+            Profile = "GuiTabBookProfile";
+            HorizSizing = "width";
+            VertSizing = "height";
+            position = "0 0";
+            Extent = "600 400";
+            MinExtent = "8 2";
+            Visible = "1";
+            TabPosition = "Top";
+            TabHeight = "22";
+            TabWidth = "80";
+
+            new GuiTabPageCtrl() {
+               Profile = "GuiTabPageProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "0 0";
+               Extent = "640 376";
+               MinExtent = "8 2";
+               Visible = "1";
+               text = "Tab 0";
+               maxLength = "255";
+               
+               new GuiChunkedBitmapCtrl() {
+                  Profile = "gsDefaultProfile";
+                  HorizSizing = "width";
+                  VertSizing = "height";
+                  position = "0 0";
+                  Extent = "640 376";
+                  MinExtent = "8 2";
+                  Visible = "1";
+                  bitmap = "./screen1.png";
+                  useVariable = "0";
+                  tile = "0";
+               };
+            };
+            new GuiTabPageCtrl() {
+               Profile = "GuiTabPageProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "0 0";
+               Extent = "640 376";
+               MinExtent = "8 2";
+               Visible = "1";
+               text = "Tab 1";
+               maxLength = "255";
+               
+               new GuiChunkedBitmapCtrl() {
+                  Profile = "gsDefaultProfile";
+                  HorizSizing = "width";
+                  VertSizing = "height";
+                  position = "0 0";
+                  Extent = "640 376";
+                  MinExtent = "8 2";
+                  Visible = "1";
+                  bitmap = "./screen2.jpg";
+                  useVariable = "0";
+                  tile = "0";
+               };
+            };
+            new GuiTabPageCtrl() {
+               Profile = "GuiTabPageProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "0 0";
+               Extent = "640 376";
+               MinExtent = "8 2";
+               Visible = "1";
+               text = "Tab 2";
+               maxLength = "255";
+               
+               new GuiChunkedBitmapCtrl() {
+                  Profile = "gsDefaultProfile";
+                  HorizSizing = "width";
+                  VertSizing = "height";
+                  position = "0 0";
+                  Extent = "640 376";
+                  MinExtent = "8 2";
+                  Visible = "1";
+                  bitmap = "./screen1.png";
+                  useVariable = "0";
+                  tile = "0";
+               };
+            };
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

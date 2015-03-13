@@ -1,0 +1,195 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(gsBitmap) {
+   profile = "gsDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      Parent = "GUISamplerInterface";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+      
+      new GuiControl() {
+         Profile = "guiSamplerBackFill";
+         horizSizing = "center";
+         vertSizing = "relative";
+         position = "100 60";
+         extent = "600 30";
+         MinExtent = "8 2";
+         Visible = "1";
+                     
+         new GuiTextCtrl() {
+            profile = "GuiMediumTextProfile";
+            horizSizing = "right";
+            vertSizing = "top";
+            position = "20 2";
+            extent = "580 26";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Sample Directory: gpgt/GUISamples/gs_Bitmap";
+         };
+      };
+
+
+      new GuiControl() {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "100 100";
+         extent = "600 400";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiWindowCtrl(scrollBitmapDemo) {
+            profile = "GuiWindowProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "5 5";
+            extent = "180 200";
+            minExtent = "8 2";
+            visible = "1";
+            maxLength = "255";
+            resizeWidth = "1";
+            resizeHeight = "1";
+            canMove = "1";
+            canClose = "0";
+            canMinimize = "0";
+            canMaximize = "0";
+            minSize = "50 50";
+			text = "wrapping demo";
+
+            new GuiBitmapCtrl(TestBitmap) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 20";
+               extent = "180 180";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./gglogo";
+               wrap = "0";
+            };
+            new GuiControl() {
+               Profile = "guiSamplerBackFill";
+               horizSizing = "right";
+               vertSizing = "top";
+               position = "20 170";
+               extent = "140 20";
+               MinExtent = "8 2";
+               Visible = "1";
+                     
+               new GuiCheckBoxCtrl(scrollEnableTestBitmap) {
+                  profile = "GuiCheckBoxProfile2";
+                  horizSizing = "right";
+                  vertSizing = "top";
+                  position = "20 1";
+                  extent = "140 18";
+                  minExtent = "8 2";
+                  visible = "1";
+                  command = "TestBitmap.wrap = $ThisControl.getValue();";
+                  text = "Enable Wrap";
+                  groupNum = "-1";
+                  buttonType = "ToggleButton";
+               };
+            };
+         };
+         new GuiWindowCtrl() {
+            profile = "GuiWindowProfile";
+            horizSizing = "left";
+            vertSizing = "top";
+            position = "215 215";
+            extent = "180 180";
+            minExtent = "8 2";
+            visible = "1";
+            maxLength = "255";
+            resizeWidth = "1";
+            resizeHeight = "1";
+            canMove = "1";
+            canClose = "0";
+            canMinimize = "0";
+            canMaximize = "0";
+            minSize = "50 50";
+			text = "setValue() demo";
+
+            new GuiBitmapCtrl(TestBitmap2) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "15 25";
+               extent = "150 150";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./HOWWorldsLogo";
+               wrap = "1";
+                  isScrolling = "1";
+                  curY = "94";
+                  curX = "94";
+            };
+         };
+         new GuiWindowCtrl() {
+            profile = "GuiWindowProfile";
+            horizSizing = "right";
+            vertSizing = "top";
+            position = "5 215";
+            extent = "180 180";
+            minExtent = "8 2";
+            visible = "1";
+            maxLength = "255";
+            resizeWidth = "1";
+            resizeHeight = "1";
+            canMove = "1";
+            canClose = "0";
+            canMinimize = "0";
+            canMaximize = "0";
+            minSize = "50 50";
+			text = "setBitmap() demo";
+
+
+            new GuiBitmapCtrl(TestBitmap3) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "15 25";
+               extent = "150 150";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./HOWWorldsLogo";
+               wrap = "0";
+                  isScrolling = "1";
+                  curY = "116";
+                  curX = "116";
+            };
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

@@ -1,0 +1,172 @@
+First pass:  enumerate scene...
+
+Processing Node Bounds with parent ROOT
+Bounding box found
+Processing Node Sequence::root with parent ROOT
+Processing Node Sequence::run with parent ROOT
+Processing Node Sequence::back with parent ROOT
+Processing Node Sequence::side with parent ROOT
+Processing Node Sequence::jump with parent ROOT
+Processing Node Sequence::standjump with parent ROOT
+Processing Node Sequence::fall with parent ROOT
+Processing Node Sequence::land with parent ROOT
+Processing Node __mainTree with parent ROOT
+Found subtree starting at Node "__mainTree"
+
+Second pass:  put shape structure together...
+
+Adding detail named "detail0" of size 0 to subtree "__mainTree".
+Adding node "__mainTree" with parent "__mainTree" to subtree rooted on node "__mainTree".
+Adding node "__meshes" with parent "__mainTree" to subtree rooted on node "__mainTree".
+Adding node "Sphere0" with parent "__meshes" to subtree rooted on node "__mainTree".
+Attaching object to node.
+Adding object named "Sphere".
+Adding mesh of size 0 to object "Sphere".
+Adding node "root" with parent "__meshes" to subtree rooted on node "__mainTree".
+Adding node "eye" with parent "root" to subtree rooted on node "__mainTree".
+Adding node "cam" with parent "root" to subtree rooted on node "__mainTree".
+
+Third pass:  Collapsing unneeded nodes...
+
+Removing node "__mainTree"
+Removing node "__meshes"
+
+Add default object states...
+
+Adding object state to 1 detail level(s) of mesh "Sphere".
+Adding frame.
+Object is visible.
+Object offset transform for mesh dl=0:
+    scale:            x=1.00000, y=1.00000, z=1.00000
+    stretch rotation: x=0.00000, y=0.00000, z=0.00000, w=1.00000
+    translation:      x=0.00000, y=-0.01500, z=0.00000
+    actual rotation:  x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+
+Add default node states...
+
+Adding node rotation at time 0.000000 for node "Sphere0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Sphere0".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "root".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "root".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "eye".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "eye".
+  translation:     x=0.00000, y=0.52000, z=1.84000
+---------------------------------
+Adding node rotation at time 0.000000 for node "cam".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "cam".
+  translation:     x=0.00000, y=-1.02000, z=3.00000
+---------------------------------
+
+Adding 8 sequences...
+
+Adding sequence 0 named "root"
+One-shot sequence.  Enabled animation:   TUA    , Forced animation:  Duration = 0.03333, secPerFrame = 0.01667, # frames = 2
+Sequence includes 0 nodes, 0 objects, and 0 ifl materials
+  0 rotations, 0 translations, 0 scales
+
+
+Adding 1 ground transform frames at 0.033333 sec per frame intervals.
+
+Adding sequence 1 named "run"
+One-shot sequence.  Enabled animation:   TUA    , Forced animation:  Duration = 0.03333, secPerFrame = 0.01667, # frames = 2
+Sequence includes 0 nodes, 0 objects, and 0 ifl materials
+  0 rotations, 0 translations, 0 scales
+
+
+Adding 1 ground transform frames at 0.033333 sec per frame intervals.
+
+Adding sequence 2 named "back"
+One-shot sequence.  Enabled animation:   TUA    , Forced animation:  Duration = 0.03333, secPerFrame = 0.01667, # frames = 2
+Sequence includes 0 nodes, 0 objects, and 0 ifl materials
+  0 rotations, 0 translations, 0 scales
+
+
+Adding 1 ground transform frames at 0.033333 sec per frame intervals.
+
+Adding sequence 3 named "side"
+One-shot sequence.  Enabled animation:   TUA    , Forced animation:  Duration = 0.03333, secPerFrame = 0.01667, # frames = 2
+Sequence includes 0 nodes, 0 objects, and 0 ifl materials
+  0 rotations, 0 translations, 0 scales
+
+
+Adding 1 ground transform frames at 0.033333 sec per frame intervals.
+
+Adding sequence 4 named "jump"
+One-shot sequence.  Enabled animation:   TUA    , Forced animation:  Duration = 0.03333, secPerFrame = 0.01667, # frames = 2
+Sequence includes 0 nodes, 0 objects, and 0 ifl materials
+  0 rotations, 0 translations, 0 scales
+
+
+Adding 1 ground transform frames at 0.033333 sec per frame intervals.
+
+Adding sequence 5 named "standjump"
+One-shot sequence.  Enabled animation:   TUA    , Forced animation:  Duration = 0.03333, secPerFrame = 0.01667, # frames = 2
+Sequence includes 0 nodes, 0 objects, and 0 ifl materials
+  0 rotations, 0 translations, 0 scales
+
+
+Adding 1 ground transform frames at 0.033333 sec per frame intervals.
+
+Adding sequence 6 named "fall"
+One-shot sequence.  Enabled animation:   TUA    , Forced animation:  Duration = 0.03333, secPerFrame = 0.01667, # frames = 2
+Sequence includes 0 nodes, 0 objects, and 0 ifl materials
+  0 rotations, 0 translations, 0 scales
+
+
+Adding 1 ground transform frames at 0.033333 sec per frame intervals.
+
+Adding sequence 7 named "land"
+One-shot sequence.  Enabled animation:   TUA    , Forced animation:  Duration = 0.03333, secPerFrame = 0.01667, # frames = 2
+Sequence includes 0 nodes, 0 objects, and 0 ifl materials
+  0 rotations, 0 translations, 0 scales
+
+
+Adding 1 ground transform frames at 0.033333 sec per frame intervals.
+
+
+Optimizing meshes...
+
+Optimizing mesh "Sphere" detail level 0.
+89 verts before joining verts
+89 verts after joining verts
+120 faces before stripping
+Using Quick, dirty, & ugly stripping method.
+27 strips with average length 7.44 (range 3 to 20) and 27 reversals
+
+Shape Hierarchy:
+
+   Details:
+      detail0, Subtree 0, objectDetail 0, size 0
+
+   Subtrees:
+      Subtree 0
+         Sphere0 --> Object Sphere with following details:  0
+         root
+            eye
+            cam
+
+   Sequences:
+        0: root
+        1: run
+        2: back
+        3: side
+        4: jump
+        5: standjump
+        6: fall
+        7: land
+
+   Material list:
+   material #0: "skin".

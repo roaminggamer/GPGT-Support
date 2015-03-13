@@ -1,0 +1,91 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   canSaveDynamicFields = "1";
+      isLessonsMission = "0";
+
+   new ScriptObject(MissionInfo) {
+         name = "Basic Water";
+   };
+   new MissionArea(MissionArea) {
+      canSaveDynamicFields = "1";
+      Area = "-376 -784 1312 1056";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      canSaveDynamicFields = "1";
+      position = "-1088 -928 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies/sky_day.dml";
+      cloudHeightPer[0] = "0.4";
+      cloudHeightPer[1] = "0.3";
+      cloudHeightPer[2] = "0.2";
+      cloudSpeed1 = "0.001";
+      cloudSpeed2 = "0.0005";
+      cloudSpeed3 = "0";
+      visibleDistance = "900";
+      fogDistance = "600";
+      fogColor = "0.82 0.828 0.844 1";
+      fogStorm1 = "1";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "100 0 150";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128 128 128 0";
+      fogVolumeColor2 = "128 128 128 0";
+      fogVolumeColor3 = "128 128 128 0";
+      windVelocity = "0.1 0.1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.547 0.641 0.789 0";
+      useSkyTextures = "0";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+         locked = "true";
+   };
+   new Sun() {
+      canSaveDynamicFields = "1";
+      azimuth = "45";
+      elevation = "35";
+      color = "0.4 0.4 0.4 1";
+      ambient = "0.2 0.2 0.2 1";
+      CastsShadows = "1";
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         locked = "true";
+         direction = "0.635001 0.635001 -0.439941";
+         scale = "1 1 1";
+   };
+   new TerrainBlock(terrain) {
+      canSaveDynamicFields = "1";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      detailTexture = "~/data/terrains/scaleDetail.png";
+      terrainFile = "./Basic Water.ter";
+      squareSize = "8";
+      bumpScale = "3";
+      bumpOffset = "0.01";
+      zeroBumpScale = "8";
+      tile = "0";
+         position = "-1024 -1024 0";
+         locked = "true";
+   };
+   new SimGroup(PlayerDropPoints) {
+      canSaveDynamicFields = "1";
+
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "203.036 -54.7177 239.022";
+         rotation = "0 0 1 164.439";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         Radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
